@@ -4,6 +4,9 @@ import java.util.Map;
 //import java.util.logging.Logger;  // getting a java logger, not the apache logger (takes string and not implementing various outputs
 import org.apache.log4j.Logger;
 
+import javax.jws.WebMethod;
+import javax.jws.WebService;
+
 /**
  * Created by Dave on 9/12/2015.
  *
@@ -14,6 +17,7 @@ import org.apache.log4j.Logger;
  *
  */
 
+@WebService()
 public class FindAndReplace {
 
     String inputFile;
@@ -26,12 +30,13 @@ public class FindAndReplace {
 //    private static Logger logger = Logger.getLogger(FindAndReplace.class.getName()); // tutorial says this, works.
 //    private final Logger logger = Logger.getLogger(this.getClass().toString()); // another way to get a string that works for java logging.
 
-
+    @WebMethod
     public FindAndReplace(String inputFile, String outputFile, String findReplaceFile) {
         logger.info("In the constructor");
         this.inputFile = inputFile;
         this.outputFile = outputFile;
         this.findReplaceFile = findReplaceFile;
+
     }
 
     public void run() {
