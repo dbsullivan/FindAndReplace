@@ -17,7 +17,7 @@ import javax.jws.WebService;
  *
  */
 
-@WebService()
+//@WebService()
 public class FindAndReplace {
 
     String inputFile;
@@ -30,7 +30,7 @@ public class FindAndReplace {
 //    private static Logger logger = Logger.getLogger(FindAndReplace.class.getName()); // tutorial says this, works.
 //    private final Logger logger = Logger.getLogger(this.getClass().toString()); // another way to get a string that works for java logging.
 
-    @WebMethod
+//    @WebMethod
     public FindAndReplace(String inputFile, String outputFile, String findReplaceFile) {
         logger.info("In the constructor");
         this.inputFile = inputFile;
