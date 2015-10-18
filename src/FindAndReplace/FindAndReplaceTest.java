@@ -1,3 +1,5 @@
+package FindAndReplace;
+
 import junit.framework.TestCase;
 import org.junit.*;
 import org.junit.rules.TemporaryFolder;
